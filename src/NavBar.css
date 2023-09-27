@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 20px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
