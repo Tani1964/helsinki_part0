@@ -1,27 +1,25 @@
+const dialog = document.getElementById("dialog");
 
-    const dialog = document.getElementById('dialog')
+const open = (e) => {
+  dialog.showModal();
+};
 
-
-    const open = (e) =>{
-        dialog.showModal()
-    }
-
-    const close = () =>{
-        dialog.close()
-    }
+const close = () => {
+  dialog.close();
+};
 
 function Form() {
-    // open.addEventListener('click', ()=>{
-    //     dialog.showModal()
-    // })
+  // open.addEventListener('click', ()=>{
+  //     dialog.showModal()
+  // })
 
-    // close.addEventListener('click', ()=>{
-    //     dialog.close()
-    // })
+  // close.addEventListener('click', ()=>{
+  //     dialog.close()
+  // })
 
-    // submit.addEventListener('click', ()=>{
-    //     dialog.close()
-    // })
+  // submit.addEventListener('click', ()=>{
+  //     dialog.close()
+  // })
 
   return (
     <div>
@@ -32,10 +30,17 @@ function Form() {
         </div>
         <div>
           <input type="reset" />
-          <input onClick={open} type="button" name="submit" value="Submit" />
+          <input
+            onClick={() => {
+              dialog.showModal()
+            }}
+            type="button"
+            name="submit"
+            value="Submit"
+          />
         </div>
         <dialog id="dialog">
-          <div >
+          <div>
             <h1>Are you sure?</h1>
             <input onClick={close} type="button" name="submit" value="NO" />
             <input onClick={close} type="Submit" name="submit" value="Yes" />
